@@ -2,7 +2,6 @@
 A modern and responsive Weather Application built using HTML, CSS, and JavaScript that provides real-time weather information for cities around the world using the OpenWeatherMap API.
 
 ## Features
-
 * Search weather by city name
 * Quick city selection dropdown
 * Real-time weather data from OpenWeatherMap API
