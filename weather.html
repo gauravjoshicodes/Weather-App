@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Weather App</title>
+	<link rel="stylesheet" href="weather.css">
+</head>
+<body>
+	<main class="container">
+		<section class="hero">
+			<div>
+				
+				<h1>Weather App</h1>
+				<p class="subtitle">Fast weather insights for cities in India and around the world.</p>
+			</div>
+		</section>
+
+		<section class="panel controls">
+			<div class="field">
+				<label for="city-select">Pick a city</label>
+				<select id="city-select">
+					<option value="">-- Select city --</option>
+					<option>Delhi</option>
+					<option>Pune</option>
+					<option>Mathura</option>
+					<option>Mumbai</option>
+					<option>Shimla</option>
+				</select>
+			</div>
+
+			<form id="search-form" class="field field--grow">
+				<label for="city-input">Or search a city</label>
+				<div class="input-row">
+					<input id="city-input" name="city" placeholder="Type a city name" autocomplete="off" />
+					<button type="submit">Search</button>
+				</div>
+			</form>
+		</section>
+
+		<section id="result" class="result">
+			<div class="status-card">
+				<p class="placeholder">Select or search a city to see the latest weather.</p>
+				<article class="card" hidden>
+					<div class="card-header">
+						<div>
+							<span class="badge">Current</span>
+							<h2 id="res-city"></h2>
+						</div>
+						<div class="weather-icon">
+							<img id="res-icon" alt="Weather icon" hidden />
+						</div>
+					</div>
+
+					<p class="temp" id="res-temp"></p>
+					<p class="desc" id="res-desc"></p>
+
+					<div class="details-grid">
+						<div><span>Feels like</span><strong id="res-feels"></strong></div>
+						<div><span>Humidity</span><strong id="res-humidity"></strong></div>
+						<div><span>Wind</span><strong id="res-wind"></strong></div>
+						<div><span>Condition</span><strong id="res-main"></strong></div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<footer class="note">
+			<h2>Note:</h2>
+			<p>This may vary as data is fetched from the OpenWeatherMap API.</p>
+		</footer>
+	</main>
+
+	<!-- Optional: load a local config that sets window.OPENWEATHER_API_KEY -->
+	<script src="config.js" defer></script>
+	<script src="weather.js" defer></script>
+</body>
+</html>
+
