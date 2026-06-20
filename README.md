@@ -69,7 +69,3 @@ https://openweathermap.org/api
 * Weather History
 * Air Quality Index (AQI)
 * Weather Maps Integration
-
-## Author
-
-Developed by Gaurav Joshi as a frontend JavaScript project to practice API integration, asynchronous programming, and responsive UI development.
